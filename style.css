@@ -72,8 +72,12 @@ a {
 }
 
 .rsvp {
+  position: absolute;
   width: 128px;
   height: 128px;
+  top: calc(50vh - 64px);
+  left: calc(50vw - 64px);
+  box-sizing: border-box;
   border-radius: 128px;
   background-color: transparent;
   border: 2px solid #fff;
@@ -107,18 +111,8 @@ a {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
   width: 140px;
   height: 140px;
-}
-
-.rsvp-container {
-  position: absolute;
-  pointer-events: none;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  top: calc(50vh - 70px);
+  left: calc(50vw - 70px);
 }
 
 .amp {
