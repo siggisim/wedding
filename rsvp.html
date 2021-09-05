@@ -6,12 +6,12 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container peek">
     <div class="color-block">
       <div class="color-block-top">
         <div class="menu">
           <a class="menu-item" href="index.html">Home</a>
-          <a class="menu-item" href="rsvp.html">RSVP</a>
+          <a class="menu-item" href="details.html">Details</a>
           <a class="menu-item" href="stay.html">To Stay</a>
           <a class="menu-item" href="do.html">To Do</a>
           <a class="menu-item" href="know.html">To Know</a>
@@ -22,11 +22,28 @@
         <div class="color-block-names">RSVP</div>
       </div>
     </div>
-    <div class="photo-block" style="background-image: url(2.jpg)"></div>
-    <div class="rsvp-container">
-      <a href="rsvp.html" class="rsvp"></a>
-      <div class="rsvp-text">RSVP</div>
+    <div class="photo-block" style="background-image: url(6.jpg)"></div>
+  </div>
+  <div class="container secondary">
+    <div class="content">
+      <div class="rsvp-form">
+        Guest one <input id="guest-one" value=""><br/>
+        Guest two <input id="guest-two" value=""><br/>
+        <button class="primary">I'm Coming To Iceland!</button>
+        <button>I'm Celebrating from Afar</button>
+      </div>
     </div>
   </div>
 </body>
 </html>
+
+<script>
+  window.onload = function() {
+    for (let [key, value] of Object.entries(localStorage)) {
+      let element = window.document.getElementById(key)
+      if (element) {
+        element.value = value || "";
+      }
+    }
+  }
+</script>

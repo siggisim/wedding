@@ -10,8 +10,8 @@
     <div class="color-block">
       <div class="color-block-top">
         <div class="menu">
-          <a class="menu-item" href="index.html">Home</a>
-          <a class="menu-item" href="rsvp.html">RSVP</a>
+          <a class="menu-item selected" href="index.html">Home</a>
+          <a class="menu-item" href="details.html">Details</a>
           <a class="menu-item" href="stay.html">To Stay</a>
           <a class="menu-item" href="do.html">To Do</a>
           <a class="menu-item" href="know.html">To Know</a>
@@ -30,3 +30,12 @@
   </div>
 </body>
 </html>
+
+<script>
+  window.onload = function() {
+    let searchParams = new URLSearchParams(window.location.search);
+    for (const [key, value] of searchParams.entries()) {
+      localStorage[key] = value;
+    }
+  }
+</script>
