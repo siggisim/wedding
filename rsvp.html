@@ -1,7 +1,10 @@
 <html>
+
 <head>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700;900&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700;900&family=Source+Sans+Pro&display=swap"
+    rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Liz & Siggi | July 22, 2022</title>
 </head>
@@ -11,13 +14,13 @@
     <div class="color-block">
       <div class="color-block-top">
         <div class="menu">
-          <a class="menu-item" href="index.html">Home</a>
-          <a class="menu-item" href="details.html">Details</a>
-          <a class="menu-item" href="stay.html">To Stay</a>
-          <a class="menu-item" href="do.html">To Do</a>
-          <a class="menu-item" href="know.html">To Know</a>
+          <a class="menu-item" href="/">Home</a>
+          <a class="menu-item" href="/details/">Details</a>
+          <a class="menu-item" href="/stay/">To Stay</a>
+          <a class="menu-item" href="/do/">To Do</a>
+          <a class="menu-item" href="/know/">To Know</a>
+        </div>
       </div>
-    </div>
       <div class="color-block-title">
         <div class="color-block-date">July 22, 2022 &nbsp;|&nbsp; Reykjavik, Iceland</div>
         <div class="color-block-names">RSVP</div>
@@ -29,15 +32,18 @@
     <div class="content">
       <div class="rsvp-title">RSVP</div>
       <div class="rsvp-form">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfHPIamU7Nd-Tb6udvRc__n1AIwpqcWw5ve4d8WtyETaenZxw/viewform?embedded=true" width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfHPIamU7Nd-Tb6udvRc__n1AIwpqcWw5ve4d8WtyETaenZxw/viewform?embedded=true"
+          width="100%" height="1600" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
       </div>
     </div>
   </div>
 </body>
+
 </html>
 
 <script>
-  window.onload = function() {
+  window.onload = function () {
     for (let [key, value] of Object.entries(localStorage)) {
       let element = window.document.getElementById(key)
       if (element) {
@@ -48,12 +54,12 @@
 </script>
 
 <script>
-  document.querySelector("iframe").addEventListener("load", 
-      function() {
+  document.querySelector("iframe").addEventListener("load",
+    function () {
       window.scrollTo({
-      top: 100,
-      left: 0,
-      behavior: 'smooth'
+        top: 100,
+        left: 0,
+        behavior: 'smooth'
+      });
     });
-  });
-  </script>
+</script>
