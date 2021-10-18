@@ -281,6 +281,7 @@ button {
   margin-right: -64px;
   border-top-left-radius: 16px;
   border-bottom-left-radius: 16px;
+  object-fit: cover;
 }
 
 @media only screen and (max-width: 1280px) {
