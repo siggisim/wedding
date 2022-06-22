@@ -214,6 +214,9 @@ button {
   pointer-events: none;
   font-weight: 300;
   transition: all 0.3s ease;
+  text-align: center;
+  /* font-family: sans-serif; */
+  /* font-weight: 700; */
 }
 
 .amp {
